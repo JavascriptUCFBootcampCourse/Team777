@@ -1,35 +1,28 @@
-// html-routes
-
-// Dependencies
+// HTML Routes
 // =============================================================
-var express = require('express');
-var bodyParser = require('body-parser');
+
+console.log("html-route.js running");
+
+
+module.exports = function(app) {
+// all code goes in here
 var path = require('path');
+//console.log(path(__dirname));
 
-// Sets up the Express App
-// =============================================================
-var app = express();
-var PORT = 3000;
-
-// Sets up the Express app to handle data parsing
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.text());
-app.use(bodyParser.json({type:'application/vnd.api+json'}));
-
-
-// Routes
-// =============================================================
 
 // Basic route that sends the user first to the AJAX Page
 app.get('/', function(req, res){
-	res.sendFile(path.join(__dirname + '/home.html'));
+	res.sendFile(path.join(__dirname + '/../public/home.html'));
 })
 
 app.get('/tables', function(req, res){
-	res.sendFile(path.join(__dirname + '/tables.html'));
+	res.sendFile(path.join(__dirname + '/../public/tables.html'));
 })
 
 app.get('/reserve', function(req, res){
-	res.sendFile(path.join(__dirname + '/reserve.html'));
+	res.sendFile(path.join(__dirname + '/../public/reserve.html'));
 })
+
+
+
+} // end of exports
