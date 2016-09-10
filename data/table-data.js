@@ -3,12 +3,14 @@
 // =============================================================
 
 
-
 var tableArray = [
-{
+  {
       customerName: "Batman",
-      customerEmail
-
-
-}
+      customerPhone: "407-867-5309",
+      customerEmail: "bwayne@waynecorp.com",
+      uniqueID: "bat"
+    }
 ];
+
+// exports
+module.exports = tableArray;

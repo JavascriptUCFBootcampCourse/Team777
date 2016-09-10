@@ -1,15 +1,4 @@
-// Today you will be building a Node / Express based web applications for handling reservation requests.
 
-// Your application will be made up of two parts:
-
-// 1) A front-end set of HTML/CSS/JS pages for entering and viewing data and
-
-// 2) A back-end composed of Node/Express and basic JS for storing, updating, and relaying reservation data.
-
-//BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS LOADED FROM OUR SERVER//
-	// In this code, jQuery is used to "download" the data from our server
-	// We then dynamically display this content in our table. This is very similar to the group projects you just completed.
-	// It's also very similar to the NYT search application. In fact, I copied a ton of code from there.
 
 	function runTableQuery(){
 

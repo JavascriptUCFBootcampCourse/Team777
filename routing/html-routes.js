@@ -24,5 +24,4 @@ app.get('/reserve', function(req, res){
 })
 
 
-
 } // end of exports

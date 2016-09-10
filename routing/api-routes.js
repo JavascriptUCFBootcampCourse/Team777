@@ -4,6 +4,11 @@
 
 console.log("api-route.js running");
 
+
+var tableData = require("../data/table-data.js");
+var waitingList = require("../data/waitinglist-data.js");
+
+
 module.exports = function(app) {
 	// all code goes in here
 
